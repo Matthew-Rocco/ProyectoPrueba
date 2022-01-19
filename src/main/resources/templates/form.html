@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Añadir Contacto</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>Añadir Contacto</h1>
+    <form action="#" th:action="@{/listado}" th:object="${contacto}" method="post">
+        <p>Número: <input type="number" th:field="*{numero}" /></p>
+        <p>Nombre: <input type="text" th:field="*{nombre}" /></p>
+        <p><input type="submit" value="Añadir Contacto" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
